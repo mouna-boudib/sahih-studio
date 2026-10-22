@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>صحيح SAHIH — Arabic AI Content Studio | تصحيح عربية الذكاء الاصطناعي إلى لهجات خليجية تبيع</title>
+<meta name="description" content="صحيح SAHIH — نصحح ونصقل المحتوى العربي المولّد بالذكاء الاصطناعي إلى لهجة سعودية وخليجية طبيعية تبيع. AI يعطيك 80%… إحنا نكمل الـ20% اللي تبيع.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#0d4d33;
+    --green-2:#116644;
+    --green-deep:#083624;
+    --gold:#c9a227;
+    --sand:#efe6d0;
+    --paper:#fdfbf6;
+    --ink:#1c2420;
+    --muted:#5c6a62;
+    --line:#e3dcc8;
+    --red-soft:#b4552d;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Noto Sans Arabic","Segoe UI",Tahoma,sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    font-size:19px;
+    line-height:1.85;
+  }
+  h1,h2,h3,.brand,.price-num{font-family:"Noto Kufi Arabic","Noto Sans Arabic",sans-serif}
+  .en{direction:ltr;unicode-bidi:embed;font-family:"Segoe UI",Arial,sans-serif}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  section{padding:64px 0}
+  .sec-head{text-align:center;max-width:720px;margin:0 auto 40px}
+  .sec-head h2{font-size:2rem;color:var(--green-deep);font-weight:800;margin-bottom:8px}
+  .sec-head .sub-en{direction:ltr;color:var(--gold);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.82rem;margin-bottom:10px}
+  .sec-head p{color:var(--muted)}
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(253,251,246,.95);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+  .brand{font-size:1.45rem;font-weight:800;color:var(--green);text-decoration:none}
+  .brand span{color:var(--gold)}
+  .nav-links{display:flex;gap:22px}
+  .nav-links a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
+  .nav-links a:hover{color:var(--green-2)}
+  @media(max-width:720px){.nav-links{display:none}}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:linear-gradient(160deg,var(--green-deep),var(--green) 55%,var(--green-2));
+    color:#fff;text-align:center;padding:84px 0 76px;
+  }
+  .hero .badge{
+    display:inline-block;border:1.5px solid var(--gold);color:var(--sand);
+    border-radius:999px;padding:4px 18px;font-size:.9rem;font-weight:600;margin-bottom:22px;
+  }
+  .hero h1{font-size:2.9rem;font-weight:800;line-height:1.5;margin-bottom:6px}
+  .hero h1 .gold{color:var(--gold)}
+  .hero .studio-en{direction:ltr;font-size:1rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sand);margin-bottom:22px}
+  .hero .promise{font-size:1.45rem;font-weight:700;max-width:760px;margin:0 auto 14px;line-height:1.9}
+  .hero .promise .pct{color:var(--gold);font-size:1.7rem}
+  .hero .promise-en{direction:ltr;color:#dfe9e2;max-width:640px;margin:0 auto 34px;font-size:1.02rem;line-height:1.7}
+  .btn{
+    display:inline-block;background:var(--gold);color:var(--green-deep);
+    font-family:"Noto Kufi Arabic",sans-serif;font-weight:800;font-size:1.15rem;
+    padding:14px 42px;border-radius:12px;text-decoration:none;border:none;cursor:pointer;
+    box-shadow:0 8px 24px rgba(0,0,0,.25);transition:transform .15s,box-shadow .15s;
+  }
+  .btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.3)}
+  .hero .micro{margin-top:16px;font-size:.92rem;color:#cfe0d5}
+
+  /* ---------- Problem ---------- */
+  .problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  @media(max-width:820px){.problem-grid{grid-template-columns:1fr}}
+  .p-card{background:#fff;border:1px solid var(--line);border-top:5px solid var(--red-soft);border-radius:14px;padding:26px 24px}
+  .p-card h3{color:var(--red-soft);font-size:1.15rem;margin-bottom:8px}
+  .p-card p{color:var(--muted);font-size:.98rem}
+
+  /* ---------- Service ---------- */
+  .service{background:var(--sand)}
+  .feat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:880px;margin:0 auto}
+  @media(max-width:720px){.feat-grid{grid-template-columns:1fr}}
+  .f-card{background:#fff;border-radius:14px;padding:26px 24px;border:1px solid var(--line)}
+  .f-card h3{color:var(--green);font-size:1.15rem;margin-bottom:8px}
+  .f-card p{color:var(--muted);font-size:.98rem}
+  .dialects{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:34px}
+  .dialect{
+    background:var(--green);color:#fff;font-family:"Noto Kufi Arabic",sans-serif;font-weight:700;
+    padding:10px 26px;border-radius:999px;font-size:1.05rem;
+  }
+  .dialect small{display:block;font-family:"Segoe UI",Arial,sans-serif;font-weight:400;font-size:.72rem;letter-spacing:.08em;color:var(--sand)}
+
+  /* ---------- Samples ---------- */
+  .sample{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px 28px;margin-bottom:26px;box-shadow:0 4px 18px rgba(13,77,51,.06)}
+  .sample h3{color:var(--green-deep);font-size:1.25rem;margin-bottom:18px}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:720px){.ba{grid-template-columns:1fr}}
+  .before,.after{border-radius:12px;padding:20px 22px;font-size:1.02rem}
+  .before{background:#faf3ec;border:1.5px dashed #d8a583}
+  .after{background:#eef7f1;border:1.5px solid var(--green-2)}
+  .before .tag,.after .tag{display:inline-block;font-family:"Noto Kufi Arabic",sans-serif;font-weight:800;font-size:.85rem;padding:2px 14px;border-radius:999px;margin-bottom:10px}
+  .before .tag{background:#f3ddcb;color:var(--red-soft)}
+  .after .tag{background:var(--green);color:#fff}
+  .change{margin-top:16px;background:var(--sand);border-radius:10px;padding:14px 18px;font-size:.95rem;color:#4c4632}
+  .change b{color:var(--green-deep)}
+
+  /* ---------- Pricing ---------- */
+  .pricing{background:linear-gradient(180deg,var(--paper),var(--sand))}
+  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
+  @media(max-width:900px){.tiers{grid-template-columns:1fr;max-width:460px;margin:0 auto}}
+  .tier{background:#fff;border:2px solid var(--line);border-radius:18px;padding:34px 28px;display:flex;flex-direction:column;text-align:center}
+  .tier.hot{border-color:var(--gold);box-shadow:0 14px 40px rgba(201,162,39,.22);position:relative}
+  .tier .hot-tag{position:absolute;top:-16px;right:50%;transform:translateX(50%);background:var(--gold);color:var(--green-deep);font-family:"Noto Kufi Arabic",sans-serif;font-weight:800;font-size:.85rem;padding:4px 20px;border-radius:999px}
+  .tier h3{color:var(--green-deep);font-size:1.3rem}
+  .tier .tier-en{direction:ltr;color:var(--muted);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+  .price-num{font-size:2.6rem;font-weight:800;color:var(--green)}
+  .price-num small{font-size:1rem;color:var(--muted);font-weight:600}
+  .tier ul{list-style:none;text-align:right;margin:20px 0 26px;flex:1}
+  .tier ul li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:.98rem}
+  .tier ul li:last-child{border-bottom:none}
+  .tier ul li::before{content:"✔ ";color:var(--green-2);font-weight:700}
+  .tier ul li.no::before{content:"— ";color:#bbb}
+  .tier ul li.no{color:#a9a9a9}
+  .tier .btn{font-size:1.02rem;padding:12px 20px}
+  .tier .btn.ghost{background:#fff;border:2px solid var(--green);color:var(--green);box-shadow:none}
+
+  /* ---------- Steps ---------- */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  @media(max-width:820px){.steps{grid-template-columns:1fr}}
+  .step{text-align:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px 24px}
+  .step .num{width:58px;height:58px;border-radius:50%;background:var(--green);color:#fff;font-family:"Noto Kufi Arabic",sans-serif;font-weight:800;font-size:1.5rem;display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+  .step h3{color:var(--green-deep);margin-bottom:8px;font-size:1.15rem}
+  .step p{color:var(--muted);font-size:.97rem}
+
+  /* ---------- FAQ ---------- */
+  .faq{background:var(--sand)}
+  .qa{max-width:820px;margin:0 auto 16px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px 26px}
+  .qa h3{color:var(--green);font-size:1.1rem;margin-bottom:6px}
+  .qa h3 .en{display:block;font-size:.85rem;color:var(--gold);letter-spacing:.04em;text-transform:none}
+  .qa p{color:var(--muted);font-size:.98rem}
+
+  /* ---------- Order form ---------- */
+  .order-box{max-width:780px;margin:0 auto;background:#fff;border:2px solid var(--green);border-radius:20px;padding:38px 34px;box-shadow:0 16px 44px rgba(13,77,51,.12)}
+  .order-box h2{color:var(--green-deep);text-align:center;font-size:1.7rem;margin-bottom:6px}
+  .order-box .lead{text-align:center;color:var(--muted);margin-bottom:28px}
+  .field{margin-bottom:18px}
+  .field label{display:block;font-weight:700;margin-bottom:6px;color:var(--green-deep);font-size:1rem}
+  .field label .req{color:var(--red-soft)}
+  .field input,.field select,.field textarea{
+    width:100%;font-family:inherit;font-size:1.02rem;padding:13px 16px;
+    border:1.5px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--green-2);background:#fff}
+  .field textarea{resize:vertical;min-height:96px}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:640px){.row2{grid-template-columns:1fr}}
+  .err{display:none;background:#fdf0e9;border:1.5px solid var(--red-soft);color:#8a3d1e;border-radius:10px;padding:12px 16px;margin-bottom:16px;font-size:.95rem}
+  .confirm{display:none;background:#eef7f1;border:1.5px solid var(--green-2);color:var(--green-deep);border-radius:10px;padding:16px 18px;margin-top:20px;font-size:.98rem}
+  .confirm a{color:var(--green-2);font-weight:700}
+  .submit-btn{width:100%;font-size:1.2rem;padding:16px}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--green-deep);color:#dfe9e2;text-align:center;padding:44px 0 34px}
+  footer .brand{color:#fff;font-size:1.6rem}
+  footer p{font-size:.95rem;color:#b9cec1;margin-top:8px}
+  footer .en{color:#9db8a8;font-size:.85rem}
+
+  /* ---------- Sticky mobile CTA ---------- */
+  .sticky-cta{display:none}
+  @media(max-width:720px){
+    .sticky-cta{
+      display:block;position:fixed;bottom:0;right:0;left:0;z-index:60;
+      background:var(--green-deep);padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+      box-shadow:0 -6px 20px rgba(0,0,0,.25);text-align:center;
+    }
+    .sticky-cta a{display:block;background:var(--gold);color:var(--green-deep);font-family:"Noto Kufi Arabic",sans-serif;font-weight:800;font-size:1.1rem;padding:13px;border-radius:10px;text-decoration:none}
+    body{padding-bottom:76px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">صحيح <span>SAHIH</span></a>
+    <nav class="nav-links">
+      <a href="#service">الخدمة</a>
+      <a href="#samples">عيّنات قبل/بعد</a>
+      <a href="#pricing">الأسعار</a>
+      <a href="#faq">الأسئلة الشائعة</a>
+      <a href="#order">اطلب الآن</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<div class="hero" id="top">
+  <div class="wrap">
+    <div class="badge">استوديو محتوى عربي بالذكاء الاصطناعي · Arabic AI Content Studio</div>
+    <h1>صحيح <span class="gold">SAHIH</span></h1>
+    <div class="studio-en">Arabic AI Content Studio</div>
+    <p class="promise">الذكاء الاصطناعي يعطيك <span class="pct">80%</span>…<br>إحنا نكمل الـ<span class="pct">20%</span> اللي تبيع</p>
+    <p class="promise-en">Your AI translation is 80% there. We do the final 20% — the part your Saudi customers actually feel.</p>
+    <a class="btn" href="#order">ابدأ طلبك الآن</a>
+    <p class="micro">عمل كتابي بالكامل — بلا مكالمات · تسليم موثّق بملف «قبل/بعد» لكل أصل</p>
+  </div>
+</div>
+
+<!-- ================= PROBLEM ================= -->
+<section id="problem">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sub-en">The Problem</div>
+      <h2>المشكلة: عربية الآلة ما تبيع</h2>
+      <p>زبونك الخليجي يحس من أول سطر إن النص «مترجم». وهالإحساس يكلفك المبيعة.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="p-card">
+        <h3>فصحى جامدة كأنها كتيّب</h3>
+        <p>نصوص الذكاء الاصطناعي تخرج بعربية رسمية ثقيلة — صحيحة لغويًا، بس بعيدة تمامًا عن لسان زبونك اليومي.</p>
+      </div>
+      <div class="p-card">
+        <h3>كلمات من لهجة غلط</h3>
+        <p>كلمة واحدة من لهجة ثانية تكفي تخلي زبونك السعودي يحس إن المتجر «مو لنا»… ويطلع قبل ما يكمل القراءة.</p>
+      </div>
+      <div class="p-card">
+        <h3>عروض تُقرأ كتعليمات</h3>
+        <p>«أسعار تنافسية وجودة ممتازة» صيغ مترجمة ما تحرك أحد. العرض اللي يبيع يحكي بلغة السوق، لا بلغة القاموس.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICE ================= -->
+<section class="service" id="service">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sub-en">The Service</div>
+      <h2>الخدمة: الـ20% البشرية الأخيرة</h2>
+      <p>لغوية عربية (فصحى قوية + لهجات خليجية) تعيد صياغة محتواك المولّد بالذكاء الاصطناعي إلى عربية طبيعية تبيع — لصفحات المنتجات، والإعلانات، وواجهات التطبيقات، ومحتوى المتاجر.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="f-card">
+        <h3>إعادة صياغة صادقة للهجة</h3>
+        <p>مو مجرد تبديل كلمات: النبرة، والإيقاع، وصيغ الخطاب — كلها تُعاد بلسان زبونك الحقيقي.</p>
+      </div>
+      <div class="f-card">
+        <h3>أسلوب تسويقي محفوظ</h3>
+        <p>نصك يظل يبيع — يتوقف بس عن إنه «يبان مترجم». الرسالة نفسها، بإحساس محلي أصيل.</p>
+      </div>
+      <div class="f-card">
+        <h3>اتساق مصطلحات عبر أصولك</h3>
+        <p>أسماء منتجاتك ومصطلحاتك موحدة في كل الأصول، مع دليل أسلوب مصغر (وفي الباقة الكاملة: دليل شامل).</p>
+      </div>
+      <div class="f-card">
+        <h3>توثيق «قبل/بعد» لكل أصل</h3>
+        <p>تستلم ملفًا يوضح كل تعديل انعمل وليش — تشوف الفرق بعينك، أصلًا بعد أصل.</p>
+      </div>
+    </div>
+    <div class="dialects">
+      <div class="dialect">سعودية<small>SAUDI — PRIMARY</small></div>
+      <div class="dialect">مصرية<small>EGYPTIAN</small></div>
+      <div class="dialect">خليجية عامة<small>GENERAL GULF</small></div>
+      <div class="dialect">فصحى سليمة<small>CLEAN MSA</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SAMPLES ================= -->
+<section id="samples">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sub-en">Before / After</div>
+      <h2>عيّنات قبل / بعد</h2>
+      <p>هذا هو الفرق اللي يشتريه زبائننا — شفه بعينك قبل ما تدفع ريال واحد.</p>
+    </div>
+
+    <div class="sample">
+      <h3>عيّنة 1 — صفحة منتج عطر (متجر سعودي)</h3>
+      <div class="ba">
+        <div class="before">
+          <span class="tag">قبل — خام AI</span>
+          <p>«نقدم لكم عطر العود الفاخر المصنوع من أجود أنواع العود الطبيعي. يتميز هذا العطر برائحة قوية وثبات عالٍ يدوم طوال اليوم. احصل عليه الآن بسعر مذهل مع إمكانية التوصيل إلى جميع المناطق.»</p>
+        </div>
+        <div class="after">
+          <span class="tag">بعد — صُحّح بسعودي يبيع</span>
+          <p>«عودٍ يليق بحضورك. عود طبيعي فاخر، فوحانه يسبقك وثباته يكمل معك اليوم كله. اطلبه الآن ويوصلك لباب البيت — وين ما كنت بالمملكة.»</p>
+        </div>
+      </div>
+      <div class="change"><b>ما تغيّر:</b> جُمل آلية عامة («نقدم لكم/أجود أنواع») → خطاب حضور ومكانة؛ «جميع المناطق» الغامضة → «وين ما كنت بالمملكة» بلسان الزبون نفسه.</div>
+    </div>
+
+    <div class="sample">
+      <h3>عيّنة 2 — إعلان أزياء (سوشيال)</h3>
+      <div class="ba">
+        <div class="before">
+          <span class="tag">قبل — خام AI</span>
+          <p>«اكتشفي تشكيلتنا الجديدة من الفساتين الأنيقة المناسبة لجميع المناسبات. تصاميم عصرية وجودة ممتازة وأسعار تنافسية. تسوقي الآن ولا تفوتي الفرصة.»</p>
+        </div>
+        <div class="after">
+          <span class="tag">بعد — صُحّح بسعودي يبيع</span>
+          <p>«فساتين تخلي الكل يسأل: من وين؟ تشكيلة جديدة وصلت — قصّات عصرية وخامة تثبت من أول لبسة. لحقي عليها قبل ما تخلص مقاساتك.»</p>
+        </div>
+      </div>
+      <div class="change"><b>ما تغيّر:</b> صيغ مترجمة («لا تفوتي الفرصة») → إلحاح طبيعي محلي؛ «جودة ممتازة» المجردة → وعد ملموس (ثبات الخامة).</div>
+    </div>
+
+    <div class="sample">
+      <h3>عيّنة 3 — واجهة تطبيق توصيل طعام (سلاسل UI)</h3>
+      <div class="ba">
+        <div class="before">
+          <span class="tag">قبل — خام AI</span>
+          <p>«تم استلام طلبك بنجاح وسيتم تحضيره الآن. يمكنك تتبع حالة الطلب من خلال الضغط على الزر أدناه. شكرًا لاستخدامك تطبيقنا.»</p>
+        </div>
+        <div class="after">
+          <span class="tag">بعد — صُحّح بسعودي يبيع</span>
+          <p>«استلمنا طلبك ✅ طلبك يتحضّر الحين. تابع وين وصل بضغطة وحدة — وبالعافية عليك.»</p>
+        </div>
+      </div>
+      <div class="change"><b>ما تغيّر:</b> رسمية زائدة وبنية مترجمة → إيجاز واجهات حقيقي ونبرة جار/صديق («بالعافية عليك»).</div>
+    </div>
+
+    <div style="text-align:center;margin-top:8px">
+      <a class="btn" href="#pricing">شوف الباقات والأسعار</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sub-en">Pricing</div>
+      <h2>الأسعار — واضحة من أول يوم</h2>
+      <p>كل أصل حتى 300 كلمة. ابدأ بأصل واحد وجرّب الفرق بنفسك.</p>
+    </div>
+    <div class="tiers">
+      <div class="tier">
+        <h3>البداية</h3>
+        <div class="tier-en">Starter</div>
+        <div class="price-num">$19<small> / أصل</small></div>
+        <ul>
+          <li>أصل واحد (حتى 300 كلمة)</li>
+          <li>اللهجة السعودية</li>
+          <li>التسليم خلال يومين</li>
+          <li>جولة مراجعة واحدة</li>
+          <li class="no">دليل أسلوب</li>
+        </ul>
+        <a class="btn ghost" href="#order">اطلب البداية</a>
+      </div>
+      <div class="tier hot">
+        <div class="hot-tag">الأكثر طلبًا للمتاجر</div>
+        <h3>باقة المتجر</h3>
+        <div class="tier-en">Store Pack</div>
+        <div class="price-num">$149<small> / 10 أصول</small></div>
+        <ul>
+          <li>10 أصول (حتى 300 كلمة لكل أصل)</li>
+          <li>سعودية / مصرية / خليجية</li>
+          <li>دليل أسلوب مصغر ✔</li>
+          <li>التسليم خلال 4 أيام</li>
+          <li>جولتا مراجعة</li>
+        </ul>
+        <a class="btn" href="#order">اطلب باقة المتجر</a>
+      </div>
+      <div class="tier">
+        <h3>الاشتراك الشهري</h3>
+        <div class="tier-en">Retainer</div>
+        <div class="price-num">$399<small> / شهر</small></div>
+        <ul>
+          <li>حتى 100 أصل شهريًا</li>
+          <li>كل اللهجات + أولوية في الطابور</li>
+          <li>دليل أسلوب كامل ✔</li>
+          <li>تسليم متدحرج 24–48 ساعة</li>
+          <li>جولتا مراجعة</li>
+        </ul>
+        <a class="btn ghost" href="#order">اطلب الاشتراك</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW WE WORK ================= -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sub-en">How It Works</div>
+      <h2>كيفاش كنخدمو — 3 خطوات، كتابيًا فقط</h2>
+      <p>بلا مكالمات، بلا اجتماعات. كل شيء مكتوب وموثّق — أسرع لك، وأوضح للطرفين.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>أرسل النص</h3>
+        <p>ترسل نص الذكاء الاصطناعي العربي + المعنى الإنجليزي/المصدر إن توفّر، عبر نموذج الطلب أسفله.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>نصقله ونوثّق</h3>
+        <p>تستلم النسخة المصقولة + ملف «قبل/بعد» يوضح كل تعديل — ضمن أجل باقتك (من 24 ساعة إلى 4 أيام).</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>راجع وانشر</h3>
+        <p>عندك جولة مراجعة مجانية على النبرة. راضٍ؟ انشر بثقة — نصك صار يحكي بلسان زبونك.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sub-en">FAQ</div>
+      <h2>الأسئلة الشائعة</h2>
+    </div>
+    <div class="qa">
+      <h3>هل تشتغل من مخرجات ذكاء اصطناعي خام؟ <span class="en">Do you work from raw AI output?</span></h3>
+      <p>إيه — مخرجات ChatGPT وDeepL وGoogle Translate هي بالضبط مدخلات شغلنا. أرسلها كما هي، وإحنا نهتم بالباقي.</p>
+    </div>
+    <div class="qa">
+      <h3>هل نحتاج مكالمة؟ <span class="en">Calls?</span></h3>
+      <p>لا مكالمات. الطلب والبريف والتسليم كلها كتابية — أسرع، وموثقة بالكامل من الطرفين.</p>
+    </div>
+    <div class="qa">
+      <h3>وش اللهجات المتوفرة؟ <span class="en">Which dialects?</span></h3>
+      <p>السعودية (الأساسية)، والمصرية، والخليجية العامة، إضافة إلى فصحى سليمة نظيفة لمن يفضلها.</p>
+    </div>
+    <div class="qa">
+      <h3>وش المحتوى اللي ما تاخذه؟ <span class="en">What don't you take?</span></h3>
+      <p>نشتغل على المحتوى التجاري الحلال فقط. ما نستقبل: الكحول، والقمار، والمحتوى الإباحي/البالغ، والتمويل الربوي. إن كان نشاطك خارج هذي الفئات، أهلاً بك.</p>
+    </div>
+    <div class="qa">
+      <h3>كيف أبدأ؟ <span class="en">How do I start?</span></h3>
+      <p>عبّئ نموذج الطلب أسفله بأصل واحد أولًا — واحكم على الفرق بنفسك قبل أي التزام أكبر.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ORDER ================= -->
+<section id="order">
+  <div class="wrap">
+    <div class="order-box">
+      <h2>نموذج الطلب</h2>
+      <p class="lead">عبّئ البيانات وسيصلنا طلبك مباشرة على واتساب — نرد كتابيًا بنفس اليوم غالبًا.</p>
+      <form id="orderForm" novalidate>
+        <div class="err" id="formErr">فضلًا عبّئ الحقول الإلزامية المميزة بـ (<span style="color:#b4552d">*</span>) — الاسم، وسيلة التواصل، واللهجة، والباقة — ثم أعد الإرسال.</div>
+        <div class="row2">
+          <div class="field">
+            <label for="fName">الاسم <span class="req">*</span></label>
+            <input type="text" id="fName" name="name" placeholder="اسمك الكريم" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="fCompany">الشركة / المتجر</label>
+            <input type="text" id="fCompany" name="company" placeholder="اسم متجرك أو شركتك">
+          </div>
+        </div>
+        <div class="field">
+          <label for="fContact">البريد الإلكتروني أو رقم واتساب <span class="req">*</span></label>
+          <input type="text" id="fContact" name="contact" placeholder="example@mail.com أو +966…" autocomplete="email">
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="fDialect">اللهجة المطلوبة <span class="req">*</span></label>
+            <select id="fDialect" name="dialect">
+              <option value="">— اختر اللهجة —</option>
+              <option value="سعودية">سعودية</option>
+              <option value="مصرية">مصرية</option>
+              <option value="خليجية عامة">خليجية عامة</option>
+              <option value="فصحى سليمة">فصحى سليمة</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="fPack">الباقة <span class="req">*</span></label>
+            <select id="fPack" name="pack">
+              <option value="">— اختر الباقة —</option>
+              <option value="Starter — $19 (أصل واحد)">Starter — $19 (أصل واحد)</option>
+              <option value="Store Pack — $149 (10 أصول)">Store Pack — $149 (10 أصول)</option>
+              <option value="Retainer — $399/شهر (حتى 100 أصل)">Retainer — $399/شهر (حتى 100 أصل)</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="fCount">عدد الأصول</label>
+          <input type="number" id="fCount" name="count" min="1" placeholder="مثال: 10">
+        </div>
+        <div class="field">
+          <label for="fContent">نص المحتوى أو رابط المحتوى</label>
+          <textarea id="fContent" name="content" placeholder="الصق نص الذكاء الاصطناعي العربي هنا، أو ضع رابط صفحات منتجاتك…"></textarea>
+        </div>
+        <div class="field">
+          <label for="fNotes">ملاحظات</label>
+          <textarea id="fNotes" name="notes" style="min-height:64px" placeholder="أي تفاصيل عن النبرة، الجمهور، أو الأجل المطلوب…"></textarea>
+        </div>
+        <button type="submit" class="btn submit-btn">إرسال الطلب عبر واتساب</button>
+        <div class="confirm" id="formConfirm">
+          تم تجهيز طلبك وفتح واتساب لإرساله ✅ إن لم يفتح واتساب عندك، أرسل نفس التفاصيل بالبريد إلى
+          <a id="mailFallback" href="mailto:boudinmouna@gmail.com">boudinmouna@gmail.com</a>
+          — أو اضغط الرابط لإعادة فتح واتساب: <a id="waAgain" href="#" target="_blank" rel="noopener">فتح واتساب</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="brand">صحيح <span style="color:var(--gold)">SAHIH</span></div>
+    <p>استوديو محتوى عربي بالذكاء الاصطناعي — الـ20% البشرية اللي تبيع.</p>
+    <p>تواصل كتابي فقط · واتساب الأعمال: <span class="en">+212 788-503562</span> · البريد: <span class="en">boudinmouna@gmail.com</span></p>
+    <p class="en">SAHIH — Arabic AI Content Studio · AI gives you 80%. We do the 20% that sells.</p>
+    <p>© 2026 صحيح SAHIH — جميع الحقوق محفوظة</p>
+  </div>
+</footer>
+
+<div class="sticky-cta"><a href="#order">اطلب تصحيح أول أصل — $19</a></div>
+
+<script>
+(function(){
+  var WA_NUMBER = "212788503562";
+  var form = document.getElementById("orderForm");
+  var errBox = document.getElementById("formErr");
+  var confirmBox = document.getElementById("formConfirm");
+
+  function val(id){ return document.getElementById(id).value.trim(); }
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var name    = val("fName"),
+        company = val("fCompany"),
+        contact = val("fContact"),
+        dialect = val("fDialect"),
+        pack    = val("fPack"),
+        count   = val("fCount"),
+        content = val("fContent"),
+        notes   = val("fNotes");
+
+    if(!name || !contact || !dialect || !pack){
+      errBox.style.display = "block";
+      errBox.scrollIntoView({behavior:"smooth", block:"center"});
+      return;
+    }
+    errBox.style.display = "none";
+
+    var lines = [];
+    lines.push("طلب جديد — صحيح SAHIH");
+    lines.push("--------------------------");
+    lines.push("الاسم: " + name);
+    if(company) lines.push("الشركة/المتجر: " + company);
+    lines.push("التواصل: " + contact);
+    lines.push("اللهجة المطلوبة: " + dialect);
+    lines.push("الباقة: " + pack);
+    if(count)   lines.push("عدد الأصول: " + count);
+    if(content) lines.push("المحتوى/الرابط: " + content);
+    if(notes)   lines.push("ملاحظات: " + notes);
+    var msg = lines.join("\n");
+
+    var waUrl = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg);
+    var mailUrl = "mailto:boudinmouna@gmail.com"
+      + "?subject=" + encodeURIComponent("طلب جديد — صحيح SAHIH (" + pack + ")")
+      + "&body=" + encodeURIComponent(msg);
+
+    document.getElementById("mailFallback").href = mailUrl;
+    document.getElementById("waAgain").href = waUrl;
+    confirmBox.style.display = "block";
+    window.open(waUrl, "_blank");
+    confirmBox.scrollIntoView({behavior:"smooth", block:"center"});
+  });
+})();
+</script>
+</body>
+</html>
